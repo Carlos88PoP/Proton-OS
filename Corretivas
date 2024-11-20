@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Registrar Ordem de Serviço____</h2>
+        <h2>Registrar Ordem de Serviço__________</h2>
         <form id="osForm">
 
             <div class="form-group">
@@ -133,13 +133,13 @@
             const doc = new jsPDF();
 
             doc.text("Ordem de Serviço", 10, 10);
-            doc.text(Edifício: ${edificio}, 10, 20);
-            doc.text(Local: ${local}, 90, 20);
-            doc.text(Equipamento: ${equipamento}, 10, 30);
-            doc.text(Data: ${data}, 10, 40);
-            doc.text(Observações: ${Observações}, 10, 50);
-            doc.text(Materias: ${Materias}, 90, 50);
-            doc.text(EquipeTécnica: ${EquipeTécnica}, 10, 60);
+            doc.text(`Edifício: ${edificio}`, 10, 20);
+            doc.text(`Local: ${local}`, 90, 20);
+            doc.text(`Equipamento: ${equipamento}`, 10, 30);
+            doc.text(`Data: ${data}`, 10, 40);
+            doc.text(`Observações: ${Observações}`, 10, 50);
+            doc.text(`Materias: ${Materias}`, 90, 50);
+            doc.text(`EquipeTécnica: ${EquipeTécnica}`, 10, 60);
 
             if (fotoAntes) {
                 doc.text("Foto Antes:", 10, 130);
